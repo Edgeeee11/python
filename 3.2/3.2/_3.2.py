@@ -1,4 +1,22 @@
-﻿# tmpp = 'absdf'
+﻿#Задание 1
+
+string = input()
+if string == string[::-1]:
+    print("yes")
+else:
+    print("no")
+
+#Задание 2
+
+string = input("Enter a string: ")
+if len(string) > 1000:
+    print('The string exceeds maximun length of 1000 char')
+else:
+    new_string = " ".join(string.split())
+    print(new_string)
+
+
+# tmpp = 'absdf'
 # print(tmpp[-1])
 # s1 = 'asd'
 # s2 = 'fgh'
@@ -46,11 +64,3 @@
 #     else:
 #         print(chr(code), end='')
 
-
-
-#Задание 1
-string = input()
-if string == string[::-1]:
-    print("yes")
-else:
-    print("no")
