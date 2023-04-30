@@ -28,4 +28,3 @@ print(input())
 print("Type:")
 print(input())
 print("Dryopithecus", "Sivapithecus", "Australopithecus", "Homo habilis", "Homo erectus", "Homo neanderthalensis", "Homo sapiens", sep='=>')
-

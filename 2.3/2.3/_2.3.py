@@ -1,6 +1,4 @@
 ﻿#Задание 1
-from operator import contains
-
 
 number = int(input())
 
@@ -32,7 +30,7 @@ elif A >= X:
     print("Mike")
 elif B >= X:
     print("Ivan")
-elif A+B >= X:
+elif A + B >= X:
     print (1)
 else:
     print(0)
