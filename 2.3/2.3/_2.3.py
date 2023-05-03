@@ -15,7 +15,7 @@ else:
 
 #Задание 2
 
-word = input("Enter a word: ")
+word = input("Введите слово: ")
 
 vowels = "aeiou"
 vowel_count = 0
@@ -30,7 +30,7 @@ for letter in word:
 if vowel_count == 0 or consonant_count == 0:
     print("False")
 else:
-    print(f"The word has {vowel_count} vowels and {consonant_count} consonants.")
+    print(f"В слове имеется {vowel_count} гластных и {consonant_count} согласных.")
 
 #Задание 3
 
