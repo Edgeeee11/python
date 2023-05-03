@@ -1,36 +1,36 @@
-﻿# #Задание 1
+﻿#Задание 1
 
-# number = int(input())
+number = int(input())
 
-# if (number < 0) and ( number%2 == 0 ):
-#     print("Отрицательное четное число")
-# elif (number < 0) and ( number%2 != 0 ):
-#     print("Отрицательное нечетное число")
-# elif (number > 0 ) and ( number%2 == 0 ):
-#     print("Положительное четное число")
-# elif (number > 0 ) and ( number %2 != 0 ):
-#     print("Положительное нечетное число")
-# else:
-#     print("Нулевое число")
+if (number < 0) and ( number%2 == 0 ):
+    print("Отрицательное четное число")
+elif (number < 0) and ( number%2 != 0 ):
+    print("Отрицательное нечетное число")
+elif (number > 0 ) and ( number%2 == 0 ):
+    print("Положительное четное число")
+elif (number > 0 ) and ( number %2 != 0 ):
+    print("Положительное нечетное число")
+else:
+    print("Нулевое число")
 
-# #Задание 2
+#Задание 2
 
-# word = input("Enter a word: ")
+word = input("Enter a word: ")
 
-# vowels = "aeiou"
-# vowel_count = 0
-# consonant_count = 0
+vowels = "aeiou"
+vowel_count = 0
+consonant_count = 0
 
-# for letter in word:
-#     if letter.lower() in vowels:
-#         vowel_count += 1
-#     elif letter.isalpha():
-#         consonant_count += 1
+for letter in word:
+    if letter.lower() in vowels:
+        vowel_count += 1
+    elif letter.isalpha():
+        consonant_count += 1
 
-# if vowel_count == 0 or consonant_count == 0:
-#     print("False")
-# else:
-#     print(f"The word has {vowel_count} vowels and {consonant_count} consonants.")
+if vowel_count == 0 or consonant_count == 0:
+    print("False")
+else:
+    print(f"The word has {vowel_count} vowels and {consonant_count} consonants.")
 
 #Задание 3
 
