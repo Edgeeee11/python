@@ -1,0 +1,107 @@
+# # #Задание 1
+# n = int(input())
+# a = []
+
+# for i in range(n):
+#     number = int(input(f'Enter a number {i+1}: '))
+#     if 1 <= number and number <= 10000:
+#         a.append(number)
+#     else:
+#         print('Num is less than 1 or more than 10000')
+#         exit()
+# a.reverse()
+# sum_of_nums = sum(a)
+# if sum_of_nums % (10**5) != sum_of_nums:
+#     print("Error: Sum of numbers modulo 10^5 is out of range")
+#     exit()
+# print(a)
+
+#Задание 2
+
+# def shift(arr):
+#     return [arr[-1]] + arr[:-1]
+
+# num = int(input())
+# nums = list(map(int, input().split()))
+
+# if len(nums) != num:
+#     print("Error: Number of integers entered does not match the value of num")
+#     exit()
+
+# for num in nums:
+#     if num <1 or num > 10**9:
+#         print("Error: Number must be between 1 and 10^9")
+#         exit()
+
+# changed_array = shift(nums)
+
+# for num in changed_array:
+#     print(num, end=' ')
+
+#Задание 3
+
+
+
+
+
+
+
+
+
+
+
+# a = [3, 4, 9, 1, 4, 3, 2, 3, 3 ,3]
+# a[1] = 10
+# print(a[1])#Отображение по индексу
+# a.append(190)#Добалвение элемента в конец массива
+# print(a[-1])#Обратная индексация (отображает последний элемент)
+# print(len(a))#Отображение длины массива
+# print(*a)#Отображение всех элементов массива в строку
+# a.insert(3, 99)#Добавление элемента в место по индексу (номер элемента, значение)
+# print(*a)
+# a.pop()#Удаление последнего элемента в массиве
+# print(*a)
+# a.pop(1)#Удаление элемента по индексу
+# print(*a)
+# # a.clear()#Очистка массива
+# # print(*a)
+# a.reverse()#Переворачивает список задом наперед
+# print(*a)
+# print(a.count(3))#Подсчитывает колличество элементов, равному значению 3
+
+# n = int(input())
+# res = []
+# for i in range(n):
+#     a = int(input())
+#     res.append(a)
+# print(res)           #Введение значений через Enter
+
+
+# res = list(map(int, input().split())) #Вывод массива через пробелы
+# print(res)           
+
+
+# tmp = list(map(int, input().split()))
+# res = []
+# for i in range(len(tmp)):
+#     if tmp[i] != 50:
+#         res.append(tmp[i])
+# print(res)                #Перебор элементов списка по индексу
+
+
+
+# tmp = list(map(int, input().split()))
+# res = []
+# for i in tmp:
+#     if i !=50:
+#         res.append(i)
+# print(res)               #Перебор элементов списка по значению списка
+
+# a = [3 for i in range(100)] #Цикл для бобавления 100 элементов цифры 3
+# print(a)
+# print(len(a))
+
+# a = 5
+# b = a
+# a = 7
+# print(b)
