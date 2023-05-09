@@ -43,8 +43,7 @@ if vowel_count == 0 or consonant_count == 0:
     print("False")
 else:
     print(f"В слове имеется {vowel_count} гластных и {consonant_count} согласных.")
-    print("В слове имеется", a_count, "a,", e_count, "e,", i_count, "i,", o_count, "o,", u_count, "u, и", y_count, "y.")
-
+    print(f"В слове имеется {a_count} a, {e_count} e, {i_count} i, {o_count} o, {u_count} u и, {y_count} y.")
 
 #Задание 3
 
