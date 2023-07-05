@@ -41,17 +41,17 @@ for num in changed_array:
 
 #Задание 3
 
-m = int(input("Введите массу: "))
+m = int(input("Mass: "))
 if not 1 <= m <= 10**6:
     print("Invalid input for m.")
     exit()
-n = int(input("Введите количество рыбаков: "))
+n = int(input("Number of fisherman: "))
 if not 1 <= n <= 100:
     print("Invalid input for n.")
     exit()
 weights = []
 for i in range(n):
-    Ai = int(input(f"Введите вес путешественника {i+1}: "))
+    Ai = int(input(f"Weight {i+1}: "))
     if not 1 <= Ai <= m:
         print("Invalid input for weight.")
         exit()
