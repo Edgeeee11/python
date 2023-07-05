@@ -17,58 +17,58 @@ if sum_of_nums % (10**5) != sum_of_nums:
     exit()
 print(a)
 
-# #Задание 2
+#Задание 2
 
-# def shift(arr):
-#     return [arr[-1]] + arr[:-1]
+def shift(arr):
+    return [arr[-1]] + arr[:-1]
 
-# num = int(input())
-# nums = list(map(int, input().split()))
+num = int(input())
+nums = list(map(int, input().split()))
 
-# if len(nums) != num:
-#     print("Error: Number of integers entered does not match the value of num")
-#     exit()
+if len(nums) != num:
+    print("Error: Number of integers entered does not match the value of num")
+    exit()
 
-# for num in nums:
-#     if num <1 or num > 10**9:
-#         print("Error: Number must be between 1 and 10^9")
-#         exit()
+for num in nums:
+    if num <1 or num > 10**9:
+        print("Error: Number must be between 1 and 10^9")
+        exit()
 
-# changed_array = shift(nums)
+changed_array = shift(nums)
 
-# for num in changed_array:
-#     print(num, end=' ')
+for num in changed_array:
+    print(num, end=' ')
 
-# #Задание 3
+#Задание 3
 
-# m = int(input("Введите массу: "))
-# if not 1 <= m <= 10**6:
-#     print("Invalid input for m.")
-#     exit()
-# n = int(input("Введите количество рыбаков: "))
-# if not 1 <= n <= 100:
-#     print("Invalid input for n.")
-#     exit()
-# weights = []
-# for i in range(n):
-#     Ai = int(input(f"Введите вес путешественника {i+1}: "))
-#     if not 1 <= Ai <= m:
-#         print("Invalid input for weight.")
-#         exit()
-#     weights.append(Ai)
+m = int(input("Введите массу: "))
+if not 1 <= m <= 10**6:
+    print("Invalid input for m.")
+    exit()
+n = int(input("Введите количество рыбаков: "))
+if not 1 <= n <= 100:
+    print("Invalid input for n.")
+    exit()
+weights = []
+for i in range(n):
+    Ai = int(input(f"Введите вес путешественника {i+1}: "))
+    if not 1 <= Ai <= m:
+        print("Invalid input for weight.")
+        exit()
+    weights.append(Ai)
 
-# weights.sort()
-# boats = 0
-# a = 0
-# b = n - 1
+weights.sort()
+boats = 0
+a = 0
+b = n - 1
 
-# while a <= b:
-#     if weights[b] + weights[a] <= m:
-#         a += 1
-#     b -= 1
-#     boats += 1
+while a <= b:
+    if weights[b] + weights[a] <= m:
+        a += 1
+    b -= 1
+    boats += 1
 
-# print(boats)
+print(boats)
 
 
 
