@@ -1,22 +1,23 @@
-# # #Задание 1
-# n = int(input())
-# a = []
+# #Задание 1
 
-# for i in range(n):
-#     number = int(input(f'Enter a number {i+1}: '))
-#     if 1 <= number and number <= 10000:
-#         a.append(number)
-#     else:
-#         print('Num is less than 1 or more than 10000')
-#         exit()
-# a.reverse()
-# sum_of_nums = sum(a)
-# if sum_of_nums % (10**5) != sum_of_nums:
-#     print("Error: Sum of numbers modulo 10^5 is out of range")
-#     exit()
-# print(a)
+n = int(input())
+a = []
 
-#Задание 2
+for i in range(n):
+    number = int(input(f'Enter a number {i+1}: '))
+    if 1 <= number and number <= 10000:
+        a.append(number)
+    else:
+        print('Num is less than 1 or more than 10000')
+        exit()
+a.reverse()
+sum_of_nums = sum(a)
+if sum_of_nums % (10**5) != sum_of_nums:
+    print("Error: Sum of numbers modulo 10^5 is out of range")
+    exit()
+print(a)
+
+# #Задание 2
 
 # def shift(arr):
 #     return [arr[-1]] + arr[:-1]
@@ -38,9 +39,36 @@
 # for num in changed_array:
 #     print(num, end=' ')
 
-#Задание 3
+# #Задание 3
 
+# m = int(input("Введите массу: "))
+# if not 1 <= m <= 10**6:
+#     print("Invalid input for m.")
+#     exit()
+# n = int(input("Введите количество рыбаков: "))
+# if not 1 <= n <= 100:
+#     print("Invalid input for n.")
+#     exit()
+# weights = []
+# for i in range(n):
+#     Ai = int(input(f"Введите вес путешественника {i+1}: "))
+#     if not 1 <= Ai <= m:
+#         print("Invalid input for weight.")
+#         exit()
+#     weights.append(Ai)
 
+# weights.sort()
+# boats = 0
+# a = 0
+# b = n - 1
+
+# while a <= b:
+#     if weights[b] + weights[a] <= m:
+#         a += 1
+#     b -= 1
+#     boats += 1
+
+# print(boats)
 
 
 
