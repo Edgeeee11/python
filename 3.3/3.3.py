@@ -1,4 +1,4 @@
-# #Задание 1
+#Задание 1
 
 n = int(input("Enter the number of elements (1 <= N <= 10000): "))
 if n < 1 or n > 10000:
