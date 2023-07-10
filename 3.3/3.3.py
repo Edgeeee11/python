@@ -1,21 +1,24 @@
 # #Задание 1
 
-n = int(input())
+n = int(input("Enter the number of elements (1 <= N <= 10000): "))
+if n < 1 or n > 10000:
+    print("Invalid value for N")
+    exit()
+
 a = []
 
 for i in range(n):
-    number = int(input(f'Enter a number {i+1}: '))
-    if 1 <= number and number <= 10000:
+    number = int(input(f'Enter number {i+1}: '))
+    if -10**5 <= number <= 10**5:
         a.append(number)
     else:
-        print('Num is less than 1 or more than 10000')
+        print('Number is less than -10^5 or more than 10^5')
         exit()
+
 a.reverse()
-sum_of_nums = sum(a)
-if sum_of_nums % (10**5) != sum_of_nums:
-    print("Error: Sum of numbers modulo 10^5 is out of range")
-    exit()
-print(a)
+
+for number in a:
+    print(number)
 
 #Задание 2
 
