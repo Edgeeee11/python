@@ -6,12 +6,9 @@ class Transport:
         self.max_speed = max_speed
         self.mileage = mileage
 
-class Autobus(Transport):
-    def __init__(self, name, max_speed, mileage):
-        super().__init__(name, max_speed, mileage)
+bus = Transport("Renaul Logan", 180, 12)
 
-autobus = Autobus("Renault Logan", 180, 12)
-print(f"Название автомобиля: {autobus.name} Скорость: {autobus.max_speed} Пробег: {autobus.mileage}")
+print(f"Название автомобиля: {bus.name} Скорость: {bus.max_speed} Пробег: {bus.mileage}")
 
 #Задание 2
 
