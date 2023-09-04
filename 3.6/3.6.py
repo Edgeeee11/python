@@ -2,20 +2,20 @@
 
 def calc(n):
     fac = 1
-    list = []
+    factorial_list = []
 
-    for i in range(1, n + 1):
+    for i in range(n, 0, -1):
         fac *= i
-        list.append(fac)
+        factorial_list.append(fac)
 
-    list.reverse()
-    return fac, list
+    return fac, factorial_list
 
 number = int(input("Введите натуральное целое число: "))
 
-fac, list = calc(number)
+fac, factorial_list = calc(number)
 print("Факториал числа", number, ":", fac)
-print("Список факториалов:", list)
+print("Список факториалов:", factorial_list)
+
 
 #Задание 2
 
